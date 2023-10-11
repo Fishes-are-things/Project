@@ -21,8 +21,7 @@ while True:
     if keyboard.is_pressed("some key"):
         break
 
-    do_something()
-  time.sleep(0.5)
+   time.sleep(0.5)
   servo1.ChangeDutyCycle(2)
 
   # Wait for 2 seconds
@@ -135,7 +134,8 @@ while True:
 
 
   time.sleep(5)
-
+  if keyboard.is_pressed("some key"):
+        break
 ###############################################
 
   servo1.ChangeDutyCycle(7)
